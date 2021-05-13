@@ -1,17 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Satisfy&display=swap');
 
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  position:relative;
+
+}
+
+
+
+
+
+
+
+
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .topnav {
 
   overflow: hidden;
-  background-color: rgb(245, 7, 165);
+  background-color: rgb(6, 177, 245);
   position: fixed;
    top: 0;
   width: 100%;
-  height: 45px;
+  height: 55px;
   z-index: 1;
 }
 .topnav a {
@@ -91,6 +108,30 @@ html {
 
 
 
+.typewriter h1 {
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+ 
+    typing 10s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(113, 236, 226) }
+}
+
+
 
 
 
@@ -114,60 +155,46 @@ html {
 
 }
 h1{
-    margin:50 auto 0 auto;
-    font-family:Tangerine;
-    font-size: 5rem;
-    color: rgb(94, 31, 212);
-    line-height: 1;
-
+  margin:50 auto 0 auto;
+  font-family:Tangerine;
+  font-size: 5rem;
+  color: rgb(24, 111, 114);
+  line-height: 1;
 }
+
 hr{
     border: dotted #284141 6px;
     border-bottom: none;
     width: 80px;
-    margin: 80px auto 80px auto;
-    
+    margin: 80px auto 80px auto;   
 }
+
 p{
     font-family: 'Dancing Script', cursive;
     font-family: 'Satisfy', cursive;
     position: relative;
     font-weight: bold;
-    color: rgb(94, 31, 212);
+    color: rgb(9, 150, 155);
     font-size: 170%;
     margin-bottom: 60px;
 }
+
 body{
-    font-size: 20px;
-    text-align: center;
-    background-color:rgb(244, 178, 250);
-    padding-top: 60px;
-    font-family: Merriweather;
-    color: rgb(208, 59, 228);
-    margin: 0;background: linear-gradient(-45deg, #faaef0, #f5aacd, #e39ef8,#faaef0,#faaef0);
-    background-size: 400% 400%;
-    animation: gradient 6s ease infinite;
-  }
-  @media only screen and (max-width: 300px) {
-    .body { }
-  }
-  
-  
-  @keyframes gradient {s
-    0% {
-      background-position: 0% 50%;
-    }
-    40% {
-      background-position: 100% 50%;
-    }
-    80% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-    
-  }
+  font-size: 20px;
+  text-align: center;     
+  background-color: #e0fafd;
+  opacity: 1;
+  background: linear-gradient(135deg, #bdf7fb55 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(225deg, #bdf7fb 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(315deg, #bdf7fb55 25%, transparent 25%) 0px 0/ 52px 52px, linear-gradient(45deg, #bdf7fb 25%, #e0fafd 25%) 0px 0/ 52px 52px;
+  padding-top: 60px;
+  font-family: Merriweather;
+  color: rgb(18, 102, 105);
+  margin: 0;
+  z-index:-1;
+ 
+
+}
+
+
 
 .bottom_cloud{
     position: absolute;
@@ -198,24 +225,23 @@ lottie-player {
     line-height: 2;
 
 }
-
 .btn {
-    background: #eea1ce;
-    background-image: -webkit-linear-gradient(top, #bb9dcc, #995cfc);
-    background-image: -moz-linear-gradient(top, #bb9dcc, #995cfc);
-    background-image: -ms-linear-gradient(top, #bb9dcc, #995cfc);
-    background-image: -o-linear-gradient(top, #bb9dcc, #995cfc);
-    background-image: linear-gradient(to bottom, #bb9dcc, #995cfc);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: Courier New;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    margin: 200px auto;
-  }
+  background: #19a5e6;
+  background-image: -webkit-linear-gradient(top, #19a5e6, #263d40);
+  background-image: -moz-linear-gradient(top, #19a5e6, #263d40);
+  background-image: -ms-linear-gradient(top, #19a5e6, #263d40);
+  background-image: -o-linear-gradient(top, #19a5e6, #263d40);
+  background-image: linear-gradient(to bottom, #19a5e6, #263d40);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 200px auto;
+}
   
   .btn:hover {
     background: #1bd188;
@@ -226,10 +252,10 @@ lottie-player {
     background-image: linear-gradient(to bottom, #1bd188, #0f5214);
     text-decoration: none;
   }
-.bottom-container{
+  .bottom-container{
     margin-top: 50px;
-    background-color:rgb(245, 7, 165);
-    padding:10px 0 5px;
+    background-color:rgb(15, 92, 92);
+    padding:20px 0 10px;
 }
 a{
     color: darkcyan;
@@ -360,29 +386,20 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+pre{
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Satisfy', cursive;
+  position: relative;
+  font-weight: bold;
+  color: rgb(9, 150, 155);
+  font-size: 170%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+strong{
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Satisfy', cursive;
+  position: relative;
+  font-weight: bold;
+  color: rgb(9, 150, 155);
+  font-size: 170%;
+}
