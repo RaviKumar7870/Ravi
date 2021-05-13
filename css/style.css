@@ -4,7 +4,6 @@
 *{
   margin:0;
   padding:0;
-  box-sizing:border-box;
   position:relative;
 
 }
@@ -111,7 +110,7 @@ html {
 .typewriter h1 {
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .10em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
@@ -184,12 +183,14 @@ body{
   text-align: center;     
   background-color: #e0fafd;
   opacity: 1;
-  background: linear-gradient(135deg, #bdf7fb55 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(225deg, #bdf7fb 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(315deg, #bdf7fb55 25%, transparent 25%) 0px 0/ 52px 52px, linear-gradient(45deg, #bdf7fb 25%, #e0fafd 25%) 0px 0/ 52px 52px;
+  background: linear-gradient(135deg, #bdf7fb55 25%, transparent 25%) -26px 0/ 52px 52px, linear-gradient(225deg, #bdf7fb 25%, transparent 25%) -26px 0/ 52px 52px, 
+  linear-gradient(315deg, #bdf7fb55 25%, transparent 25%) 0px 0/ 52px 52px, linear-gradient(45deg, #bdf7fb 25%, #e0fafd 25%) 0px 0/ 52px 52px;
   padding-top: 60px;
   font-family: Merriweather;
   color: rgb(18, 102, 105);
   margin: 0;
-  z-index:-1;
+
+
  
 
 }
@@ -273,6 +274,7 @@ a:hover{
 }
 * 
 body {font-family: Verdana, sans-serif;}
+.myslides{display:none;}
 .mySlides1 {display: none;}
 .mySlides2 {display: none;}
 .mySlides3 {display: none;}
@@ -372,7 +374,7 @@ img {vertical-align: middle;}
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-
+}
 
 @keyframes fade {
   from {opacity: .4} 
@@ -384,22 +386,4 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
-}
-
-pre{
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Satisfy', cursive;
-  position: relative;
-  font-weight: bold;
-  color: rgb(9, 150, 155);
-  font-size: 170%;
-}
-
-strong{
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Satisfy', cursive;
-  position: relative;
-  font-weight: bold;
-  color: rgb(9, 150, 155);
-  font-size: 170%;
 }
